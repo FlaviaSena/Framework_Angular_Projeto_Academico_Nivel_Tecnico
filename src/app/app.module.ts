@@ -8,6 +8,9 @@ import { CursosComponent } from './paginas/cursos/cursos.component';
 import { TurmasComponent } from './paginas/turmas/turmas.component';
 import { AlunosComponent } from './paginas/alunos/alunos.component';
 import { ProfessoresComponent } from './paginas/professores/professores.component';
+import { IncluirCursosComponent } from './paginas/incluir-cursos/incluir-cursos.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,13 @@ import { ProfessoresComponent } from './paginas/professores/professores.componen
     CursosComponent,
     TurmasComponent,
     AlunosComponent,
-    ProfessoresComponent
+    ProfessoresComponent,
+    IncluirCursosComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

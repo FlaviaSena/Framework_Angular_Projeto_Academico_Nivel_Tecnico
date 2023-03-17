@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./alunos.component.css']
 })
 export class AlunosComponent {
-
+  
 }
