@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CursoService } from 'src/app/servicos/curso.service';
+
 
 @Component({
   selector: 'app-incluir-cursos',
@@ -8,7 +10,7 @@ import { Component } from '@angular/core';
 export class IncluirCursosComponent {
   curso = {nome: '', valor: 0};
 
-  constructor(){
+  constructor (private service: CursoService){
   }
 
 

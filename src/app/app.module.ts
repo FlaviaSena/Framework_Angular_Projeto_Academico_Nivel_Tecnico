@@ -11,6 +11,8 @@ import { ProfessoresComponent } from './paginas/professores/professores.componen
 import { IncluirCursosComponent } from './paginas/incluir-cursos/incluir-cursos.component';
 
 import { FormsModule } from '@angular/forms';
+import { IncluirAlunoComponent } from './paginas/incluir-aluno/incluir-aluno.component';
+import{HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,11 +23,13 @@ import { FormsModule } from '@angular/forms';
     AlunosComponent,
     ProfessoresComponent,
     IncluirCursosComponent,
+    IncluirAlunoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
