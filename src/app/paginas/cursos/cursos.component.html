@@ -2,3 +2,19 @@
 <a routerLink="/incluirCurso">Novo Curso</a>
 <h2>Em breve tem mais</h2>
 
+
+<table> 
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Valor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of cursos">
+        <td>{{c.nome}}</td>
+        <td>{{c.valor}}</td>
+        </tr>
+    </tbody>
+</table>
+

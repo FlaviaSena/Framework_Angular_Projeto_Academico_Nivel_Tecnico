@@ -11,6 +11,10 @@ export class CursoService {
   cadastrar(obj: any){
     console.log(" Primeiro vez que cheguei no service que é a minha barreira de frontEnd");
     console.log(obj);
-    this.http.post(this.url, obj);
+    return this.http.post(this.url, obj); 
+    
+  }
+  busca(){
+    return this.http.get(this.url);
   }
 }
