@@ -1,2 +1,21 @@
 <p>alunos works!</p>
 <a routerLink="/incluirAluno">Incluir Novo Aluno>
+
+    <table> 
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of aluno">
+            <td>{{a.id}}</td>
+            <td>{{a.nome}}</td>
+            <td>{{a.email}}</td>
+            <td>{{a.telefone}}</td>
+            </tr>
+        </tbody>
+    </table>

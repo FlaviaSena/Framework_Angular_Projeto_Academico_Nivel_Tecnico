@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,9 +6,16 @@ import { Injectable } from '@angular/core';
 })
 export class AlunoService {
 
-  constructor() { }
+  url = "http://localhost:8080/api/aluno";
+
+  constructor( private http: HttpClient) { }
   cadastrar(obj: any){
-    console.log("Estamos aqui novamente");
+    console.log(" Primeiro vez que cheguei no service que é a minha barreira de frontEnd");
     console.log(obj);
+    return this.http.post(this.url, obj); 
+    
+  }
+  busca(){
+    return this.http.get(this.url);
   }
 }
